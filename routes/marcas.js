@@ -119,8 +119,6 @@ router.get("/maisModelos/:x", async (req, res, next) => {
         let qnt = parseInt(req.params.x)
 
         while (index < qnt) {
-            console.log(index);
-            console.log(req.params.x);
             maisModelosList.push(array[index].brand + " - " + array[index].modelsQuantity );
             index++;
         }
@@ -149,8 +147,6 @@ router.get("/menosModelos/:x", async (req, res, next) => {
         let qnt = parseInt(req.params.x)
 
         while (index < qnt) {
-            console.log(index);
-            console.log(req.params.x);
             menosModelosList.push(array[index].brand + " - " + array[index].modelsQuantity );
             index++;
         }
